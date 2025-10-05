@@ -1,0 +1,18 @@
+=== CLAIM 1 ===
+chi2=2.5620, dof=5, p=0.767128
+Termination rates by race:
+ - Black or African American: 36.250%
+ - White: 33.690%
+ - Asian: 31.034%
+ - Two or more races: 27.273%
+ - American Indian or Alaska Native: 0.000%
+ - Hispanic: 0.000%
+
+=== CLAIM 2 ===
+male_n=135, female_n=176
+male_mean=70629.40, female_mean=67786.73
+t=0.9956, p=0.320258
+
+=== CLAIM 3 ===
+Chi-square Race x Performance: chi2=18.1074, dof=15, p=0.25706
+Ordinal t-test (Minority vs Non): t=-0.2388, p=0.811481
