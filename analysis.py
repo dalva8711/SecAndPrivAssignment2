@@ -95,10 +95,19 @@ def main():
             out.append(f"Chi-square Race x Performance: chi2={chi2_3:.4f}, dof={dof_3}, p={p_3:.6g}")
         if df['PerformanceOrdinal'].notna().any():
             subo = df[[race_col, 'PerformanceOrdinal']].dropna()
+            
+            # Average performance scores by race
+            out.append("\nAverage Performance Scores by Race (0=PIP, 1=Needs Improvement, 2=Fully Meets, 3=Exceeds):")
+            perf_by_race = subo.groupby(race_col)['PerformanceOrdinal'].mean().sort_values(ascending=False)
+            for race, avg_score in perf_by_race.items():
+                out.append(f" - {race}: {avg_score:.3f}")
+            
             is_min = ~subo[race_col].astype(str).str.contains("White", case=False, na=False)
             gmin = subo.loc[is_min, 'PerformanceOrdinal']
             gnon = subo.loc[~is_min, 'PerformanceOrdinal']
             if len(gmin) > 1 and len(gnon) > 1:
+                out.append(f"\nMinority average: {float(np.mean(gmin)):.3f}")
+                out.append(f"Non-minority average: {float(np.mean(gnon)):.3f}")
                 t_stat3, p_val3 = ttest_ind(gmin, gnon, equal_var=False, nan_policy='omit')
                 out.append(f"Ordinal t-test (Minority vs Non): t={t_stat3:.4f}, p={p_val3:.6g}")
     else:

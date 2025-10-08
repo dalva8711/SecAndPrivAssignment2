@@ -15,4 +15,15 @@ t=0.9956, p=0.320258
 
 === CLAIM 3 ===
 Chi-square Race x Performance: chi2=18.1074, dof=15, p=0.25706
+
+Average Performance Scores by Race (0=PIP, 1=Needs Improvement, 2=Fully Meets, 3=Exceeds):
+ - American Indian or Alaska Native: 2.333
+ - Black or African American: 2.013
+ - Hispanic: 2.000
+ - White: 1.984
+ - Asian: 1.897
+ - Two or more races: 1.727
+
+Minority average: 1.968
+Non-minority average: 1.984
 Ordinal t-test (Minority vs Non): t=-0.2388, p=0.811481
