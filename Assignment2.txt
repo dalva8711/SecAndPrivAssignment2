@@ -1,0 +1,39 @@
+Claim 1: Termination Rates and Race
+•	Null Hypothesis: Termination status is independent of race
+•	Alternative Hypothesis: termination status depends on race
+Claim 2: Pay Disparity Between Men and Women
+•	Null Hypothesis: The main salary of men equals the mean salary of women
+•	Alternative Hypothesis: The main salary of men and women differ
+Claim 3: Performance Scores and Races
+•	Null Hypothesis: Performance evaluation scores are independent of race
+•	Alternative Hypothesis: Performance evaluation scores differ systematically
+Based on results:
+Alpha = 0.05 to ensure there are no to many false positives
+Claim 1: Termination and Rates and Race
+•	X2(5) = 2.5620 p = 0.7671
+•	p > 0.05, we fail to reject the null hypothesis
+•	There is not statistically significant evidence that termination rates differ across racial groups. African Americans do have a slightly higher terminations rate than Whites (36% vs 33%) but the X2 test shows that it is not statistically significant.
+Claim 2: Pay Disparity Between Men and Women
+•	Male salary mean: $70629.40  Female Salary Mean: $67786.73 p = 0.3203 t = 0.9956
+•	p > 0.05, we fail to reject null hypothesis
+•	There is a difference in mean salaries but according to the test, this disparity is not statistically significant.
+Claim 3: Performance Scores and Races
+•	X2(15) = 18.1074  p = 0.25706
+•	t-test: t = -0.2388 p = 0.811481
+•	We fail to reject p because in both tests p > 0.05
+•	Minority and non-minority groups have nearly the same average performance scores. Mean score is 1.99. Upper range: 2.333 Lower Range: 1.727
+
+
+
+Research Ethics: (company data gets leaked)
+When should releasing the analysis of the data be ethical?
+	This would only be ethical when: the dataset is lawfully obtained/permission is granted, when all identifying info is removed to protect identity, and if there has been a proper ethics analysis by a ethics publishing group.
+More on ethical perspectives:
+
+Utilitarian Perspective:
+o	Benefit: Uncovering the analysis of the data could potentially uncover discriminatory practices, and help improve well-being for all employees
+o	Harms: privacy violations for people whose data is in the analysis, if the analysis determines there are bad practices then companies may lose reputation.
+
+Deontological:
+o	Data being stolen or unethically obtained violates property rights and privacy rights.
+o	Even if there is a beneficial outcome, rights come first.
